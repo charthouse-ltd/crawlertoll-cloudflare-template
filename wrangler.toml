@@ -1,0 +1,26 @@
+# Cloudflare Workers config — `wrangler deploy` to ship.
+#
+# Rename `crawlertoll-worker` below to your own Worker name. The route
+# binding is commented out by default; uncomment once you have a custom
+# domain on Cloudflare DNS (or use a workers.dev subdomain for testing).
+
+name = "crawlertoll-worker"
+main = "src/index.ts"
+compatibility_date = "2025-05-01"
+compatibility_flags = ["nodejs_compat"]
+
+# Custom domain — uncomment + edit when ready.
+# [[routes]]
+# pattern = "your-domain.com/*"
+# custom_domain = true
+
+# Observability — keeps Worker logs and tail-on-deploy.
+[observability]
+enabled = true
+
+# Optional: store your RSL policy + context-license.json in KV instead of
+# inlining them. Uncomment + create the namespace via:
+#   wrangler kv:namespace create CRAWLERTOLL_CONFIG
+# [[kv_namespaces]]
+# binding = "CRAWLERTOLL_CONFIG"
+# id = "<your-namespace-id>"

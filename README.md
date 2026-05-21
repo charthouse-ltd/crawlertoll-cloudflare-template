@@ -2,7 +2,7 @@
 
 **Fork-and-deploy Cloudflare Workers template for the AI-crawler economy.** Detect AI crawlers, verify Web Bot Auth, apply RSL 1.0 policy, and issue HTTP 402 with a structured payment offer — at Cloudflare's edge, on the free Workers tier, **with no Cloudflare Enterprise plan required**.
 
-[![Deploy to Cloudflare Workers](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/nhrzxxw9dn-web/crawlertoll-cloudflare-template)
+[![Deploy to Cloudflare Workers](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/charthouse-ltd/crawlertoll-cloudflare-template)
 
 - **License**: Apache-2.0
 - **Runtime**: Cloudflare Workers (free tier — 100k req/day, plenty for most sites)
@@ -35,7 +35,7 @@ GET /.well-known/context-license.json →  buyer-side discovery metadata
 
 ```bash
 # 1. Clone
-git clone https://github.com/nhrzxxw9dn-web/crawlertoll-cloudflare-template my-worker
+git clone https://github.com/charthouse-ltd/crawlertoll-cloudflare-template my-worker
 cd my-worker
 
 # 2. Install

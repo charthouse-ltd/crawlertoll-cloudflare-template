@@ -8,7 +8,7 @@
   "homepage": "https://crawlertoll.com",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nhrzxxw9dn-web/crawlertoll-cloudflare-template.git"
+    "url": "git+https://github.com/charthouse-ltd/crawlertoll-cloudflare-template.git"
   },
   "keywords": [
     "cloudflare-workers",
